@@ -1,4 +1,209 @@
-/*
-Tulis di sini semua style yang Anda buat.
-Tidak diperbolehkan membuat file .CSS lainnya.
-*/
+body, html {
+    height: 100%;
+}
+.bg {
+    /* The image used */
+    background-image: url("images/high-landscape-majestic-1183021.jpg");
+
+    /* Full height */
+    height: 100%; 
+
+    /* Center and scale the image nicely */
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    padding-top: 120px;
+}
+
+.bga {
+    /* The image used */
+    background-image: url("images/alone-boy-covered-1126621.jpg");
+
+    /* Full height */
+    height: 100%; 
+
+    /* Center and scale the image nicely */
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    padding-top: 10px;
+}
+
+.image {
+  opacity: 1;
+  display: block;
+  width: 50%;
+  height: auto;
+  transition: .5s ease;
+  backface-visibility: hidden;
+}
+
+.container {
+    position: relative;
+    width: 100%;
+}
+
+.middle {
+  transition: .5s ease;
+  opacity: 0;
+  position: absolute;
+  top: 50%;
+  left: 25%;
+  transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
+  text-align: center;
+}
+
+.container:hover .image {
+  opacity: 0.3;
+}
+
+.container:hover .middle {
+  opacity: 1;
+}
+
+.text {
+  background-color: #4CAF50;
+  color: white;
+  font-size: 16px;
+  padding: 16px 32px;
+}
+
+.row {
+  display: flex;
+  flex-wrap: wrap;
+  padding: 0 1px;
+}
+
+.column {
+  flex: 25%;
+  max-width: 50%;
+  padding: 0 1px;
+}
+
+.topnav {
+  overflow: hidden;
+  background-color: #333;
+}
+
+.topnav a {
+  float: left;
+  color: #f2f2f2;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+  font-size: 17px;
+}
+
+.topnav a:hover {
+  background-color: #ddd;
+  color: black;
+}
+
+.topnav a.active {
+  background-color: #4c98db;
+  color: white;
+}
+
+.topnav p {
+  float:right;
+  margin-right: 30px;
+  color: #fff;
+  font-style: ;
+  font-size: 15px;
+}
+
+.footer-area {
+    background: #333;
+    padding: 25px;
+}
+
+.footer-area p {
+    margin-bottom: 0;
+    font-size: 18px;
+    color: #fff;
+    text-align: center;
+}
+
+* {box-sizing: border-box}
+body {font-family: Verdana, sans-serif; margin:0}
+
+/* Slideshow container */
+.slideshow-container {
+  position: relative;
+  background: rgba(140, 137, 137, 0.6);
+
+}
+
+/* Slides */
+.mySlides {
+  display: none;
+  padding: 80px;
+  text-align: center;
+}
+
+/* Next & previous buttons */
+.prev, .next {
+  cursor: pointer;
+  position: absolute;
+  top: 50%;
+  width: auto;
+  margin-top: -30px;
+  padding: 16px;
+  color: #888;
+  font-weight: bold;
+  font-size: 20px;
+  border-radius: 0 3px 3px 0;
+  user-select: none;
+}
+
+
+/* Add an italic font style to all quotes */
+q {font-style: italic;}
+
+/* Add a blue color to the author */
+.author {
+  color: #4c98db;
+  font-size: 15px;
+}
+
+* {
+    box-sizing: border-box;
+}
+
+.fade {
+  -webkit-animation-name: fade;
+  -webkit-animation-duration: 1.5s;
+  animation-name: fade;
+  animation-duration: 1.5s;
+}
+
+@-webkit-keyframes fade {
+  from {opacity: .5} 
+  to {opacity: 1}
+}
+
+@keyframes fade {
+  from {opacity: .5} 
+  to {opacity: 1}
+}
+
+.card {
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+  max-width: 900px;
+  margin: auto;
+  margin-bottom: 10px;
+  margin-top: 10px;
+  padding-top: 10px;
+  padding-bottom: 10px;
+  padding: 10px;
+  text-align: center;
+  font-family: arial;
+  background: rgba(140, 137, 137, 0.6)
+}
+
+.title {
+  color: darkgrey;
+  font-size: 18px;
+  line-height: 5px;
+}
