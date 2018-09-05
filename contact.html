@@ -12,13 +12,28 @@
 			<a class="active" href="contact.html">Contact</a>
 			<p><b>TIO JESSLYN</b></p>
 		</div>
-		<h1>TIO JESSLYN</h1>
-		<h3>Computer Science Student</h3>
-		<h4>UNIVERSITAS MULTIMEDIA NUSANTARA</h4>
 		
-		<div class="container">
+		<div class="containercontact">
 			<h1>Contact</h1>
 			<form>
+				<label for="name">Name</label>
+				<input type="text" id="name" name="name" placeholder="Your name..">
+
+				<label for="email">E-mail</label>
+				<input type="text" id="email" name="email" placeholder="Your email..">
+
+				<label for="country">Country</label>
+				<select id="country" name="country">
+					<option value="Indonesia">Indonesia</option>
+					<option value="Singapore">Singapore</option>
+					<option value="Malaysia">Malaysia</option>
+				</select>
+
+				<label for="comment">Comment</label>
+				<textarea id="comment" name="comment" placeholder="Write something.." style="height:200px"></textarea>
+
+				<input type="submit" value="Submit">
+			<!-- <form>
 				Name : <input type="text" name="name">
 				<br>
 				Email : <input type="Email" name="email">
@@ -26,7 +41,7 @@
 				Subject : <input type="text" name="subject">
 				<br>
 				Message : <textarea rows="4" cols="50" name="comment"></textarea>
-				<br>
+				<br> -->
 			</form>
 		</div>
 	</body>
