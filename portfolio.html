@@ -1,23 +1,115 @@
 <!doctype html>
 <html>
-	<head>
-		<title>Portfolio</title>
-		<link href="style.css" rel="stylesheet" type="text/css"/>
-	</head>
-	<body>
-		<div class="topnav">
-			<a href="index.html">Home</a>
-			<a href="about.html">About</a>
-			<a class="active" href="portfolio.html">Portfolio</a>
-			<a href="contact.html">Contact</a>
-			<p><b>TIO JESSLYN</b></p>
+<head>
+	<title>Portfolio</title>
+	<link href="style.css" rel="stylesheet" type="text/css"/>
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+</head>
+
+<body>
+	<div class="topnav">
+		<a href="index.html">Home</a>
+		<a href="about.html">About</a>
+		<a class="active" href="portfolio.html">Portfolio</a>
+		<a href="contact.html">Contact</a>
+		<p><b>TIO JESSLYN</b></p>
+	</div>
+
+	<div class="tab">
+		<button class="tablinks" onclick="openCity(event, 'Education')">Education</button>
+		<button class="tablinks" onclick="openCity(event, 'Experience')">Experience</button>
+	</div>
+
+	<div id="Education" class="tabcontent">
+		<div class="bgp">
+			<div class="timeline">
+				<div class="contain left">
+					<div class="content">
+						<h2>2016-Now</h2>
+						<p>College at Universitas Multimedia Nusantara.</p>
+					</div>
+				</div>
+				<div class="contain right">
+					<div class="content">
+						<h2>2013-2016</h2>
+						<p>Senior High School at Karangturi Senior Highschool Semarang.</p>
+					</div>
+				</div>
+				<div class="contain left">
+					<div class="content">
+						<h2>2010-2013</h2>
+						<p>Junior High School at Karangturi Junior Highschool Semarang.</p>
+					</div>
+				</div>
+				<div class="contain right">
+					<div class="content">
+						<h2>2003-2010</h2>
+						<p>Elementary School at SD Cor Jesu Semarang.</p>
+					</div>
+				</div>
+			</div>
 		</div>
+	</div>
+
+	<div id="Experience" class="tabcontent">
+		<div class="bgp">
+			<div class="timeline">
+				<div class="contain left">
+					<div class="content">
+						<h2>2017-Now</h2>
+						<p>Secretary and Treasurer in Informatics Student Association.</p>
+					</div>
+				</div>
+				<div class="contain right">
+					<div class="content">
+						<h2>June-December 2017</h2>
+						<p>Member of Festival Decoration Division.</p>
+					</div>
+				</div>
+				<div class="contain left">
+					<div class="content">
+						<h2>March-August 2017</h2>
+						<p>Person in Charge for Student Orientation.</p>
+					</div>
+				</div>
+				<div class="contain right">
+					<div class="content">
+						<h2>February-April 2017</h2>
+						<p>Member of Security Division at Computer Science Go Outdoor.</p>
+					</div>
+				</div>
+				<div class="contain left">
+					<div class="content">
+						<h2>January-May 2017</h2>
+						<p>Member of Starlight Season 3 Decoration Division.</p>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+
+	<script>
+		function openCity(evt, cityName) {
+			var i, tabcontent, tablinks;
+			tabcontent = document.getElementsByClassName("tabcontent");
+			for (i = 0; i < tabcontent.length; i++) {
+				tabcontent[i].style.display = "none";
+			}
+			tablinks = document.getElementsByClassName("tablinks");
+			for (i = 0; i < tablinks.length; i++) {
+				tablinks[i].className = tablinks[i].className.replace(" active", "");
+			}
+			document.getElementById(cityName).style.display = "block";
+			evt.currentTarget.className += " active";
+		}
+	</script>
+
 		<!-- <h1>TIO JESSLYN</h1>
 		<h3>Computer Science Student</h3>
 		<h4>UNIVERSITAS MULTIMEDIA NUSANTARA</h4> -->
 		
-		<div class="containerportfolio">
-			<div class="card">
+		<!-- <div class="containerportfolio">
+			<div class="cardportfolio">
 				<h2>Education</h2>
 				<p>
 					
@@ -25,11 +117,14 @@
 			</div>
 			<div class="card">
 			</div>
-		</div>
+		</div> -->
+		
+
+		
 	</body>
 	<footer class="footer-area">
 		<div class="container">
 			<p>Created by Tio Jesslyn - 00000015723</p>
 		</div>
 	</footer>
-</html>
+	</html>
