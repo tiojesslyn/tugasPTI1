@@ -77,6 +77,10 @@ body, html {
     background-color: #4c98db;
 }
 
+.tab .active {
+    background-color: #4c98db;
+}
+
 /* Style the tab content */
 .tabcontent {
     display: none;
